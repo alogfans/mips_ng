@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rm -f raft-mips
+iverilog -o raft-mips *.v
+vvp -n raft-mips -lxt2
+
